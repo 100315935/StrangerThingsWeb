@@ -1,4 +1,70 @@
 @import "../../node_modules/font-awesome/css/font-awesome.css";
 @import"./reset.css";
 
+<<<<<<< HEAD
 
+=======
+*, 
+*::before, *::after, 
+*:before, *:after { 
+    box-sizing : border-box;
+}
+
+@font-face {
+    font-family: 'Benguiat';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Benguiat'), url('benguiat_[allfont.net].woff') format('woff');
+}
+/*
+.wraper{
+    border:;
+
+}*/
+
+header{
+    color:black;
+}
+
+
+    header h1{
+        font-family: 'Benguiat';
+    }
+
+    header p{
+        
+    }
+
+/*
+
+article{
+
+}
+
+    article p{
+
+    }
+*/
+
+/*Poner primer parrafo diferente
+
+    article p:first-child{
+
+    }
+
+    article h2{
+
+    }
+
+    article ul.personajes{
+
+    }
+
+    article ul.temporadas{
+
+    }
+
+    article ul.otros{
+
+    }
+>>>>>>> 96c03b603a73f4b21d171a7cf5f3a423ff291253
