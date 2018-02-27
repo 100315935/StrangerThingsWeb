@@ -1,3 +1,82 @@
-<template  id = "about">
+<template  id = "about">        
+         <body>
+              <header>
+              <h1 title="Formulario 1">
+                  Apuntate a nuestra Newsletter
+            </h1>
+            </header>
+              <aside>
+                  <noscript>
+                        <p>
+                         <em>Si lees este mensaje es que tu navegador no 
+                            ejecuta guiones JavaScript</em>
+                    </p>
+                  </noscript>
+            </aside>
+            <article>
+                <form name="form_1" id="form_1" method="post" action="http:\\localhost">
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        <p>
+                            <label for="Nombre">Nombre:</label>
+                            <input type="text" id="Nombre" name="Nombre" size="30" placeholder="Escriba su nombre">
+                        </p>
+                        <p>
+                            <label for="apell">Apellido:</label>
+                            <input type="text" id="Apellidos" name="Apelidosl" size="30" maxlength="100" placeholder="Escriba sus apellidos">
+                        </p>
+                        <p>
+                            <label for="address">Email:</label>
+                            <input type="text" id="Email" name="Email" size="30" maxlength="200" placeholder="Escriba su email">
+                        </p>
+                        <p>
+                            <label for="city">Ciudad:</label>
+                            <input type="text" id="Ciudad" name="Ciudad" placeholder="Escriba su ciudad">
+                        </p>
+                        <p>
+                            <label class="top" for="coment">Comentarios:</label>
+                            <textarea id="coment" name="coment" placeholder="Escriba los comentarios que consideres oprtunos"></textarea>
+                        </p>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>Opinion personal</legend>
+                        <p>
+                            <label class="long">¿Quieres recibir noticias de otras series?</label>
+                            <label><input type="radio" value="si" name="pregunta" id="pregunta_si" /> SI</label>
+                            <input type="radio" value="no" name="pregunta" id="pregunta_no" /> NO
+                        </p>
+                        <p>
+                                <label class="long" for="opciones">Quiero recibir noticias de:</label>
+                                <select id="opciones" name="opciones">
+                                    <option value="1">Juego de tronos</option>
+                                    <option value="2">House of Cards</option>
+                                    <option value="3">The Crown</option>
+                                    <option value="4">La Peste</option>
+                                </select>
+                            </p>
+                        <p>
+                            <input type="checkbox" id="condiciones" value="condiciones" name="condiciones">
+                            <label class="long" for="condiciones">He leído y acepto las condiciones de uso</label>
+                        </p>
+                        <p>
+                    </fieldset>
+                    <fieldset>
+                        <p><label></label>
+                            <input id="submit" type="submit" value="Aceptar"> &nbsp;
+                            <input id="reset" type="reset" value="Borrar">
+                        </p>
+                    </fieldset>
+                </form>
+                <div id="resultado" class="oculto">
+                    <h2>Los datos del usuario son los siguientes</h2>			
+                <ul id="parrafo_1"> </ul>
+                </div>	
+            </article>
+        
+         </body>
+        
+        </html>
+        
 
 </template>

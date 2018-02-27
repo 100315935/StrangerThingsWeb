@@ -1,9 +1,6 @@
 @import "../../node_modules/font-awesome/css/font-awesome.css";
 @import"./reset.css";
 
-<<<<<<< HEAD
-
-=======
 *, 
 *::before, *::after, 
 *:before, *:after { 
@@ -67,4 +64,3 @@ article{
     article ul.otros{
 
     }
->>>>>>> 96c03b603a73f4b21d171a7cf5f3a423ff291253
