@@ -18,5 +18,7 @@
   "homepage": "https://github.com/100315935/StrangerThingsWeb#readme",
   "dependencies": {
     "fontawesome": "^4.7.2"
-  }
+  },
+  "devDependencies": {},
+  "keywords": []
 }
