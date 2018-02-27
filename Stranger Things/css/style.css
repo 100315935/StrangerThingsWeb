@@ -1,0 +1,56 @@
+@import "../../node_modules/font-awesome/css/font-awesome.css";
+@import"./reset.css";
+
+.wraper{
+    border:;
+
+}
+
+header{
+    font-family:;
+    font-weight:;
+    margin-top:;
+    background-color:;
+    color:;
+    box-shadow:;
+    padding:;
+}
+
+    header h1{
+
+    }
+
+    header p{
+        
+    }
+
+article{
+
+}
+
+    article p{
+
+    }
+
+    /*Poner primer parrafo diferente*/
+
+    article p:first-child{
+
+    }
+
+    article h2{
+
+    }
+
+    article ul.personajes{
+
+    }
+
+    article ul.temporadas{
+
+    }
+
+    article ul.otros{
+
+    }
+
