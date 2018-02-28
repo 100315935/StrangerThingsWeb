@@ -8,47 +8,80 @@
         <link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="import" href="./templates/inicio.html">
-        <link rel="import" href="./templates/about.html">
+        <link rel="import" href="./templates/inicio.html" title="inicio">
+        <link rel="import" href="./templates/temporadas.html" title="temporadas">
+        <link rel="import" href="./templates/reparto.html" title="reparto">
+        <link rel="import" href="./templates/about.html" title="acerca_de">
+        <script src="./app/app.js" type="module"></script>
     </head>
     <body>
         <div class="wraper">
             <header>
-                <h1>Stranger Things</h1>
-                <p>La serie del momento</p>
+                <img src="./img/titulo2.png" alt="titulo">
+                <p></p>
             </header>
             <aside>
                 <!--Noticias en aside-->
                 <section id="noticias">
+                        <img src="./img/luces.png" alt="Luces">
                         <h2>Noticias</h2>
                         <article>
                             <h3>La tercera temporada podría tener 3 nuevos personajes</h3>
                             <p>"Fuentes informan que la nueva temporada podría incluir tres nuevos personajes: el alcalde, un reportero y una señor mayor”.</p>
                             <li><a href="enlace a noticia">Enlace</a></li>
                         </article>
+                        <article>
+                                <h3>Stranger things nominada a 3 globos de oro</h3>
+                                <p>"Fuentes informan que la nueva temporada podría incluir tres nuevos personajes: el alcalde, un reportero y una señor mayor”.</p>
+                                <li><a href="enlace a noticia">Enlace</a></li>
+                        </article>
+                        <article>
+                                <h3>Stranger things nominada a 3 globos de oro</h3>
+                                <p>"Fuentes informan que la nueva temporada podría incluir tres nuevos personajes: el alcalde, un reportero y una señor mayor”.</p>
+                                <li><a href="enlace a noticia">Enlace</a></li>
+                        </article>
+                        <article>
+                                <h3>Stranger things nominada a 3 globos de oro</h3>
+                                <p>"Fuentes informan que la nueva temporada podría incluir tres nuevos personajes: el alcalde, un reportero y una señor mayor”.</p>
+                                <li><a href="enlace a noticia">Enlace</a></li>
+                        </article>
+                        <p>Podemos añadir botones para ir a la siguiente pag de noticias (1,2,3...14)
+                            o un boton de siguiente/ir al blog de noticias
+                        </p>
                     </section>
             </aside>
             <article>
                 <!-- MENÚ -->
                 <nav>
                     <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Reparto</a></li>
-                        <li><a href="#">Temporadas</a></li>
-                        <li><a href="#">Acerca de</a></li>
+                        <li><a id ='inicio' href="#">Inicio</a></li>
+                        <li><a id ='reparto' href="#">Reparto</a></li>
+                        <li><a id ='temporadas' href="#">Temporadas</a></li>
+                        <li><a id ='acerca_de' href="#">Acerca de</a></li>
                     </ul>
+                    
                 </nav>
             </article>
+            <body>
+                <main>
+                    
+               </main>
+            </body>
+            <div class="clear"></div>
             <footer>
-                <div>
-                    <p><i class="fa fa-copyright"></i> 2018 Babel S.A.</p>
+                <div class="right">
+                    <ul>
                     <li><a href="#">Terminos</a></li>
                     <li><a href="#">Privacidad</a></li>
                     <li><a href="#">Ayuda</a></li>
                     <li><a href="#">Acerca de</a></li>
-                    <p id="facebook"><i class="fa fa-facebook"><a href="http.\\www.facebook.com"></a></i></p>
-                    <p id="twitter"><i class="fa fa-twitter"></i></p>
-                    <p id="instagram"><i class="fa fa-instagram"></i></p>
+                    </ul>
+                </div>
+                <div class="left">
+                        <p><i class="fa fa-copyright"></i> 2018 Babel S.A.</p>
+                        <a id="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a id="twitter"href="https://www.twitter.com/"><i class="fa fa-twitter"></i>
+                        <a id="instagram"href="https://www.instagram.com/"><i class="fa fa-instagram"></i>
                 </div>
             </footer>
         </div>

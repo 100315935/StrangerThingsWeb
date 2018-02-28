@@ -14,6 +14,11 @@
     src: local('Benguiat'), url('benguiat_[allfont.net].woff') format('woff');
 }
 
+body{
+/*      background-image: url(../img/poster3.jpg);
+     background-size: 100% */
+     background-color: rgb(32, 7, 7)
+}
 .opacity body:before {
     content: "";
     position: fixed;
@@ -21,79 +26,88 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../img/background.jpg);
+   
     opacity: 0.1;
     overflow:auto;
     z-index: -1;
 }
 
 header{
-    color:black;
+    color:rgb(196, 131, 131);
+/*     background-image: url(../img/poster3.jpg);
+    background-size: 70% */
+    border-bottom-width: 6rem;
 }
 
-
-    header h1{
-        font-size: 5rem;
+    header p{
+        font-size: 1rem;
         font-family: 'Benguiat';
         text-align: center;
     }
-
-    header p{
-        text-align: center;
-    }
-
-aside{
-
-}
-    aside h2{
-        font-family: 'Benguiat'; 
+    .clear {
+        width: 100%;
+        clear: both;
     }
 
 nav {
     border-radius: 1rem;
-    background-color: var(--color-principal);
+    background-color: brown;
     overflow: auto;
-}
 
-    nav ul{
+}
+  nav ul{
         margin: 0px;
         padding: 0px;
         list-style: none;
         text-align: center;
     }
 
+
     nav li{
         display: inline-block;
-        width: 15%;
+        white-space: nowrap;
+        width: 20%;
+        font-size: 0.5 em
     }
 
     nav a {
         text-decoration: none;
-        color:initial;
+        color: beige;
+        font-weight: bold;
         display: block;
         /*El padding determina el alto del menu*/
         padding: 1rem;
     }
 
-    aside {
+aside {
         width: 34%;
         margin: 1em 2% 0em 1%;
-        float: left;
+        float: right;
         clear: right;
+        color: black
     }
-<<<<<<< HEAD
-
-    article ul.otros{
-
-    }
-=======
         aside section {
-            background-color: red;
+            border-radius: 1rem;
+            background-color: rgba(9, 18, 70, 0.911);
             border: black;
             padding: 1rem;
         }
+        aside section img{
+            width: 100%;
+            height: 10%;
+            position: relative;
+         }
+        
+        aside h2{
+        font-family: 'Benguiat'; 
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+        color: beige;
+        
+        }
     
-        aside h2, h3, p{
+        aside h3, p{
             padding: 0.1em 1em;
         }
     
@@ -110,4 +124,77 @@ nav {
         aside img {
             width: 100%;
         }
->>>>>>> 0ef2e5921cc56415739fe9510a9ec6c964ba90d2
+        aside article{
+            border-radius: 1rem;
+            background-color:rgba(220, 245, 245, 0.925);
+            border: black;
+        }
+main{
+    width: 50%;
+
+    
+}   main h3{
+     text-align: center;
+     font-family: 'Benguiat';
+     font-size: 3 rem;
+     font-weight: bold;
+     color: black
+    }
+    main fieldset{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 2 rem;
+        color: black
+    }
+main {
+        width: 60%;
+        margin: 1em 1% 0em 2%;
+        float: left;
+        clear: left;
+        background-color: darkgray;
+        }
+        section.main article{
+            overflow: auto;
+        }
+footer{
+            margin-top: 1em;
+            padding: 1em 0em;
+            border-radius: 5px;
+          /*   background-image: url(../img/poster2.jpg);
+            background-size: 80% */
+            background:rgb(24, 5, 5);
+            color: rgba(196, 177, 177, 0.911)
+        }
+    
+
+    footer ul{
+        width:80%;
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        text-align: center;
+        overflow: auto;
+    }
+
+    footer li{
+        display: inline-block;
+        white-space: nowrap;
+        width: 30%;
+    }
+    footer a{
+      color: rgba(196, 177, 177, 0.911)
+    }
+
+    .right{
+        float: right;
+        width:60%
+    }
+
+    .infoper,.infoper2{
+        align-content: center;
+        width:40%; 
+    }
+    .infoper img{
+        width: 50%;
+        height: 20%;
+    }
+    
