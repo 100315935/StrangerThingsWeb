@@ -1,4 +1,6 @@
 export class Main {
+
+    //TEMPLATES
     constructor() {
         console.log("Main loaded")
         this.vista = {
@@ -44,20 +46,6 @@ export class Main {
         console.log(ELEM)
         // el HTML del elemnto se añade en el punto adecuado
         this.vista.eMain.innerHTML = ELEM.innerHTML
-    }
-
-    _validaNombre() {
-        // fallback para validación del nombre (sólo en ausencia de HTML5)
-        var oNodo = document.getElementById("Nombre") ;
-        if (oNodo.value.length == 0) {
-            oNodo.nextSibling.nextSibling.innerHTML = "Debe completar el Nombre";
-            oNodo.focus();
-            return false;
-        }
-        else {
-            oNodo.nextSibling.nextSibling.innerHTML = "";
-            return true;
-        }
     }
 
 }
