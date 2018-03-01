@@ -33,15 +33,18 @@
                                 <legend>Datos personales</legend>
                                 <p>
                                     <label for="Nombre">Nombre:</label>
-                                    <input type="text" id="Nombre" name="Nombre" size="30" placeholder="Escriba su nombre">
+                                    <input type="text" id="Nombre" name="Nombre" size="30" placeholder="Escriba su nombre" required>
+                                    <span id="errorFName" class="error"> </span></p>
                                 </p>
                                 <p>
                                     <label for="apell">Apellido:</label>
-                                    <input type="text" id="Apellidos" name="Apelidosl" size="30" maxlength="100" placeholder="Escriba sus apellidos">
+                                    <input type="text" id="Apellidos" name="Apelidosl" size="30" maxlength="100" placeholder="Escriba sus apellidos" required>
+                                    <span id="errorApell" class="error"> </span></p>
                                 </p>
                                 <p>
                                     <label for="address">Email:</label>
                                     <input type="text" id="Email" name="Email" size="30" maxlength="200" placeholder="Escriba su email">
+                                    <span id="errorCorreo" class="error"> </span></p>
                                 </p>
                                 <p>
                                     <label for="city">Ciudad:</label>
@@ -70,7 +73,7 @@
                                 </select>
                             </p>
                         <p>
-                            <input type="checkbox" id="condiciones" value="condiciones" name="condiciones">
+                            <input type="checkbox" id="condiciones" value="condiciones" name="condiciones" required>
                             <label class="long" for="condiciones">He leído y acepto las condiciones de uso</label>
                         </p>
                         <p>
