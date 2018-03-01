@@ -13,7 +13,9 @@
         <link rel="import" href="./templates/reparto.html" title="reparto">
         <link rel="import" href="./templates/about.html" title="acerca_de">
         <script src="./app/app.js" type="module"></script>
+        <script src="./app/about.js" type="module"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        
     </head>
     <body>
         <div class="wraper">
@@ -41,32 +43,41 @@
                                 <p>"Fuentes informan que la nueva temporada podría incluir tres nuevos personajes: el alcalde, un reportero y una señor mayor”.</p>
                                 <li><a href="enlace a noticia">Enlace</a></li>
                         </article>
-                        <article>
-                                <h3>Stranger things nominada a 3 globos de oro</h3>
-                                <p>"Fuentes informan que la nueva temporada podría incluir tres nuevos personajes: el alcalde, un reportero y una señor mayor”.</p>
-                                <li><a href="enlace a noticia">Enlace</a></li>
-                        </article>
-                        <p>Podemos añadir botones para ir a la siguiente pag de noticias (1,2,3...14)
-                            o un boton de siguiente/ir al blog de noticias
+                        <p><a href="#" class="notbot">&#8249;</a>
+                            <a href="#" class="notbot">&#8250;</a>
                         </p>
                     </section>
             </aside>
             <article>
                 <!-- MENÚ -->
                 <nav>
-                    <ul>
-                        <li><a id ='inicio' href="#">Inicio</a></li>
-                        <li><a id ='reparto' href="#">Reparto</a></li>
-                        <li><a id ='temporadas' href="#">Temporadas</a></li>
-                        <li><a id ='acerca_de' href="#">Acerca de</a></li>
-                    </ul>
-                    
+                    <div class="navbar">
+                            <a id ='inicio' href="#">Inicio</a>
+                            <a id ='reparto' href="./reparto.html">Reparto</a>
+                            <div class="dropdown">
+                              <button class="dropbtn">Temporadas 
+                                <i class="fa fa-caret-down"></i>
+                              </button>
+                              <div class="dropdown-content">
+                                    <a href="./temporadas.html">Temporada 1</a>
+                                    <a href="#">Temporada 2</a>
+                                    <a href="#">Temporada 3</a>
+                              </div>
+                            </div>
+                            <a id ='galeria' href="./galeria.html">Galería</a>
+                            <a id ='acerca_de' href="./about2.html">Acerca de</a>
+                          </div>
                 </nav>
             </article>
             <body>
                 <main>
-                        <body>
+                        <div class="container">
+
+ 
                                 <header>
+                                <h1 title="Formulario 1">
+                                    Inscripción como docente (Microfórum)
+                              </h1>
                               </header>
                                 <aside>
                                     <noscript>
@@ -77,89 +88,84 @@
                                     </noscript>
                               </aside>
                               <article>
-                                  <h3>Sobre nosotras:</h3>
-                                  <div class="infoper">
-                                      <figure><img src="./img/lucia.jpg" alt="foto lucia"></figure>
-                                  <h4>Lucía Alvargonzález </h4>
-                                  <p>Esta es mi vida y mola</p>
-                                  </div>
-                                  <div class="infoper2">
-                                    <figure><img src="./img/bea.jpg" alt="foto bea"></figure>
-                                  <h4>Beatriz Moreno </h4>
-                                  <p>Esta es mi vida y mola</p>  
-                                  </div>            
-                              </article>
+                                      <h3>Sobre nosotras:</h3>
+                                      <div class="row">
+                                              <div class="column">
+                                                <div class="card">
+                                                  <img src="./img/lucia.jpg" alt="Lucia" style="width:100%">
+                                                  <div class="container">
+                                                    <h2>Lucia Alvargonzalez</h2>
+                                                    <p class="title">CEO &amp; Founder</p>
+                                                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                                    <p>example@example.com</p>
+                                                    <p><button class="button">Contact</button></p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            
+                                              <div class="column">
+                                                <div class="card">
+                                                  <img src="./img/bea.jpg" alt="Bea" style="width:100%">
+                                                  <div class="container">
+                                                    <h2>Beatriz Moreno</h2>
+                                                    <p class="title">CEO</p>
+                                                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                                    <p>example@example.com</p>
+                                                    <p><button class="button">Contact</button></p>
+                                                  </div>
+                                                </div>
+                                              </div>            
+                                  </article>
                               <article>
-                                      <h3 title="Formulario 1">
-                                              Apuntate a nuestra Newsletter
-                                        </h3>
-                                  <form name="form_1" id="form_1" method="post" action="http:\\localhost">
-                                      <p></p>
-                                          <fieldset>
-                                                  <legend>Datos personales</legend>
-                                                  <p>
-                                                      <label for="Nombre">Nombre:</label>
-                                                      <input type="text" id="Nombre" name="Nombre" size="30" placeholder="Escriba su nombre" required>
-                                                      <span id="errorFName" class="error"> </span></p>
-                                                  </p>
-                                                  <p>
-                                                      <label for="apell">Apellido:</label>
-                                                      <input type="text" id="Apellidos" name="Apelidosl" size="30" maxlength="100" placeholder="Escriba sus apellidos" required>
-                                                      <span id="errorApell" class="error"> </span></p>
-                                                  </p>
-                                                  <p>
-                                                      <label for="address">Email:</label>
-                                                      <input type="text" id="Email" name="Email" size="30" maxlength="200" placeholder="Escriba su email">
-                                                      <span id="errorCorreo" class="error"> </span></p>
-                                                  </p>
-                                                  <p>
-                                                      <label for="city">Ciudad:</label>
-                                                      <input type="text" id="Ciudad" name="Ciudad" placeholder="Escriba su ciudad">
-                                                  </p>
-                                                  <p>
-                                                      <label class="top" for="coment">Comentarios:</label>
-                                                      <textarea id="coment" name="coment" placeholder="Escriba los comentarios que consideres oprtunos"></textarea>
-                                                  </p>
-                                              </fieldset>
-                          
-                                      <fieldset>
-                                          <legend>Opinion personal</legend>
-                                          <p>
-                                              <label class="long">¿Quieres recibir noticias de otras series?</label>
-                                              <label><input type="radio" value="si" name="pregunta" id="pregunta_si" /> SI</label>
-                                              <input type="radio" value="no" name="pregunta" id="pregunta_no" /> NO
+                                   <form  name="form_1" id="form_1">
+                                                 
+                                         <fieldset><legend>Datos personales</legend>
+                                            <p><label for="Nombre">Nombre:</label>
+                                            <input type="text" id="Nombre" name="Nombre" size="30" placeholder="Escriba su nombre" required>
+                                            <span id="errorFName" class="error"> </span></p>
+                                            <p><label for="Apellidos">Apellido:</label>
+                                              <input type="text" id="Apellidos" name="Apellidos" maxlength="100" placeholder="Escriba sus apellidos" required>
+                                              <span id="errorApell" class="error"> </span></p>
+                                          <p><label for="Correo">Cuenta de correo</label>
+                                              <input type="email" title="Introduzca su dirección de correo" maxlength="50"  placeholder="cuenta@dominio.com" name="Correo" id="Correo" required>
+                                              <span id="errorCorreo" class="error"> </span></p>
+                                          <p><label for="city">Ciudad:</label>
+                                              <input type="text" id="Ciudad" name="Ciudad" placeholder="Escriba su ciudad"></p> 
+                                          <p><label class="top" for="Comentarios">Comentarios:</label>
+                                              <textarea id="Comentarios" name="Comentarios" placeholder="Escriba los comentarios que consideres oprtunos"> </textarea></p>
+                                      </fieldset>	
+                                      <fieldset><legend>Otros datos</legend>
+                                            <p><label class="long" for="pregunta">¿Quieres recibir noticias sobre otras series?</label>	
+                                              <input type="radio" value="si" name="pregunta" id="pregunta_si"/> SI
+                                              <input type="radio" value="no" name="pregunta" id="pregunta_no"/> NO
                                           </p>
                                           <p>
-                                                  <label class="long" for="opciones">Quiero recibir noticias de:</label>
-                                                  <select id="opciones" name="opciones">
-                                                      <option value="1">Juego de tronos</option>
-                                                      <option value="2">House of Cards</option>
-                                                      <option value="3">The Crown</option>
-                                                      <option value="4">La Peste</option>
-                                                  </select>
-                                              </p>
-                                          <p>
-                                              <input type="checkbox" id="condiciones" value="condiciones" name="condiciones" required>
-                                              <label class="long" for="condiciones">He leído y acepto las condiciones de uso</label>
+                                              <label class="long" for="opciones">En caso de SÍ, ¿sobre cual de las siguientes?</label>
+                                              <select id="opciones" name="opciones">
+                                                  <option value="1">---</option>
+                                                  <option value="2">Juego de Tronos</option>
+                                                  <option value="3">The Walking Dead</option>
+                                                  <option value="4">The Crown</option>
+                                                  <option value="5">The Big Bang Theory</option>
+                                              </select>
                                           </p>
                                           <p>
+                                              <input type="checkbox"  id="condiciones" value="condiciones" name="condiciones" required>
+                                              <label class ="long" for="condiciones">He leído y acepto las condiciones de trabajo</label>
+                                              <span id="errorCondiciones" class="error"> </span>
+                                          </p>
                                       </fieldset>
                                       <fieldset>
                                           <p><label></label>
-                                              <input id="submit" type="submit" value="Aceptar"> 
-                                              <input id="reset" type="reset" value="Borrar">
-                                          </p>
+                                              <input id="submit" type="submit" value="Aceptar" onclick="recogeDatos()"> &nbsp; 
+                                              <input id="reset" type="reset" value="Borrar"></p>
                                       </fieldset>
                                   </form>
                                   <div id="resultado" class="oculto">
-                                      <h2>Tus datos son:</h2>			
-                                      <ul id="parrafo_1"></ul>
-                                      <input id="submit" type="submit" value="Volver al inicio"> &nbsp;
+                                      <h2>Los datos del usuario son los siguientes</h2>			
+                                      <p id="listaDatos"> </p>
                                   </div>	
                               </article>
-                          
-                           </body>
-                          
                </main>
             </body>
             <div class="clear"></div>
@@ -182,3 +188,5 @@
         </div>
     </footer>
 </html>
+
+  

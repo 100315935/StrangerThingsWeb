@@ -74,8 +74,6 @@ nav {
   padding: 14px 16px;
   text-decoration: none;
   display: inline-block;
-  font-weight: bold;
-  padding: 1rem;
 }
 /*   nav ul{
         margin: 0px;
@@ -111,7 +109,7 @@ nav {
     font-size: 16px; 
     border: none;
     outline: none;
-    color: white;
+    color: beige;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */

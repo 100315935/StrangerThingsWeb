@@ -1,5 +1,5 @@
 export class Main {
-
+/* 
     //TEMPLATES
     constructor() {
         console.log("Main loaded")
@@ -25,11 +25,11 @@ export class Main {
     menuItems(oEv) {
         oEv.preventDefault()
         console.log(`Pulsado ${oEv.target.id}`)
-/*         if(oEv.target.id=="acerca_de"){
+        if(oEv.target.id=="acerca_de"){
             document.location.target = "_blank";
             document.location.href="./about2.html";
         }
-        else{ */
+        else{
         if (!this.vista.oImports[oEv.target.id]) {
             // Si no existe template
             this.vista.eMain.innerHTML = `
@@ -39,7 +39,7 @@ export class Main {
         }else {
             this._cargarTemplate(oEv.target.id )
         }
-/*         } */
+        }
     }
 
     _cargarTemplate (id) {
@@ -52,6 +52,6 @@ export class Main {
         console.log(ELEM)
         // el HTML del elemnto se añade en el punto adecuado
         this.vista.eMain.innerHTML = ELEM.innerHTML
-    }
+    } */
 
 }
