@@ -25,15 +25,21 @@ export class Main {
     menuItems(oEv) {
         oEv.preventDefault()
         console.log(`Pulsado ${oEv.target.id}`)
+/*         if(oEv.target.id=="acerca_de"){
+            document.location.target = "_blank";
+            document.location.href="./about2.html";
+        }
+        else{ */
         if (!this.vista.oImports[oEv.target.id]) {
             // Si no existe template
             this.vista.eMain.innerHTML = `
             <article>
                 <h2>${oEv.target.id.toUpperCase()}</h2>
             </article>`
-        } else {
+        }else {
             this._cargarTemplate(oEv.target.id )
         }
+/*         } */
     }
 
     _cargarTemplate (id) {

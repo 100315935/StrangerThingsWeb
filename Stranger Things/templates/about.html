@@ -1,4 +1,6 @@
-<template id="acerca_de">        
+<template id="acerca_de">
+        <script>
+            </script>        
          <body>
               <header>
             </header>
@@ -12,16 +14,32 @@
             </aside>
             <article>
                 <h3>Sobre nosotras:</h3>
-                <div class="infoper">
-                    <figure><img src="./img/lucia.jpg" alt="foto lucia"></figure>
-                <h4>Lucía Alvargonzález </h4>
-                <p>Esta es mi vida y mola</p>
-                </div>
-                <div class="infoper2">
-                  <figure><img src="./img/bea.jpg" alt="foto bea"></figure>
-                <h4>Beatriz Moreno </h4>
-                <p>Esta es mi vida y mola</p>  
-                </div>            
+                <div class="row">
+                        <div class="column">
+                          <div class="card">
+                            <img src="./img/lucia.jpg" alt="Lucia" style="width:100%">
+                            <div class="container">
+                              <h2>Lucia Alvargonzalez</h2>
+                              <p class="title">CEO &amp; Founder</p>
+                              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                              <p>example@example.com</p>
+                              <p><button class="button">Contact</button></p>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <div class="column">
+                          <div class="card">
+                            <img src="./img/bea.jpg" alt="Bea" style="width:100%">
+                            <div class="container">
+                              <h2>Beatriz Moreno</h2>
+                              <p class="title">CEO</p>
+                              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                              <p>example@example.com</p>
+                              <p><button class="button">Contact</button></p>
+                            </div>
+                          </div>
+                        </div>            
             </article>
             <article>
                     <h3 title="Formulario 1">
@@ -80,7 +98,7 @@
                     </fieldset>
                     <fieldset>
                         <p><label></label>
-                            <input id="submit" type="submit" value="Aceptar"> &nbsp;
+                            <input id="submit" type="submit" value="Aceptar"> 
                             <input id="reset" type="reset" value="Borrar">
                         </p>
                     </fieldset>
@@ -95,6 +113,4 @@
          </body>
         
         </html>
-        
-
 </template>

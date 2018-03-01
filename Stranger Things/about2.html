@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Stranger Things</title>
+        <link rel="stylesheet" href="../Stranger Things/css/style.css">
+        <link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="import" href="./templates/inicio.html" title="inicio">
+        <link rel="import" href="./templates/temporadas.html" title="temporadas">
+        <link rel="import" href="./templates/reparto.html" title="reparto">
+        <link rel="import" href="./templates/about.html" title="acerca_de">
+        <script src="./app/app.js" type="module"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    </head>
+    <body>
+        <div class="wraper">
+            <header>
+                <img src="./img/titulo2.png" alt="titulo">
+                <p></p>
+            </header>
+            <aside>
+                <!--Noticias en aside-->
+                <section id="noticias">
+                        <img src="./img/luces.png" alt="Luces">
+                        <h2>Noticias</h2>
+                        <article>
+                            <h3>La tercera temporada podría tener 3 nuevos personajes</h3>
+                            <p>"Fuentes informan que la nueva temporada podría incluir tres nuevos personajes: el alcalde, un reportero y una señor mayor”.</p>
+                            <li><a href="enlace a noticia">Enlace</a></li>
+                        </article>
+                        <article>
+                                <h3>Stranger things nominada a 3 globos de oro</h3>
+                                <p>"Fuentes informan que la nueva temporada podría incluir tres nuevos personajes: el alcalde, un reportero y una señor mayor”.</p>
+                                <li><a href="enlace a noticia">Enlace</a></li>
+                        </article>
+                        <article>
+                                <h3>Stranger things nominada a 3 globos de oro</h3>
+                                <p>"Fuentes informan que la nueva temporada podría incluir tres nuevos personajes: el alcalde, un reportero y una señor mayor”.</p>
+                                <li><a href="enlace a noticia">Enlace</a></li>
+                        </article>
+                        <article>
+                                <h3>Stranger things nominada a 3 globos de oro</h3>
+                                <p>"Fuentes informan que la nueva temporada podría incluir tres nuevos personajes: el alcalde, un reportero y una señor mayor”.</p>
+                                <li><a href="enlace a noticia">Enlace</a></li>
+                        </article>
+                        <p>Podemos añadir botones para ir a la siguiente pag de noticias (1,2,3...14)
+                            o un boton de siguiente/ir al blog de noticias
+                        </p>
+                    </section>
+            </aside>
+            <article>
+                <!-- MENÚ -->
+                <nav>
+                    <ul>
+                        <li><a id ='inicio' href="#">Inicio</a></li>
+                        <li><a id ='reparto' href="#">Reparto</a></li>
+                        <li><a id ='temporadas' href="#">Temporadas</a></li>
+                        <li><a id ='acerca_de' href="#">Acerca de</a></li>
+                    </ul>
+                    
+                </nav>
+            </article>
+            <body>
+                <main>
+                        <body>
+                                <header>
+                              </header>
+                                <aside>
+                                    <noscript>
+                                          <p>
+                                           <em>Si lees este mensaje es que tu navegador no 
+                                              ejecuta guiones JavaScript</em>
+                                      </p>
+                                    </noscript>
+                              </aside>
+                              <article>
+                                  <h3>Sobre nosotras:</h3>
+                                  <div class="infoper">
+                                      <figure><img src="./img/lucia.jpg" alt="foto lucia"></figure>
+                                  <h4>Lucía Alvargonzález </h4>
+                                  <p>Esta es mi vida y mola</p>
+                                  </div>
+                                  <div class="infoper2">
+                                    <figure><img src="./img/bea.jpg" alt="foto bea"></figure>
+                                  <h4>Beatriz Moreno </h4>
+                                  <p>Esta es mi vida y mola</p>  
+                                  </div>            
+                              </article>
+                              <article>
+                                      <h3 title="Formulario 1">
+                                              Apuntate a nuestra Newsletter
+                                        </h3>
+                                  <form name="form_1" id="form_1" method="post" action="http:\\localhost">
+                                      <p></p>
+                                          <fieldset>
+                                                  <legend>Datos personales</legend>
+                                                  <p>
+                                                      <label for="Nombre">Nombre:</label>
+                                                      <input type="text" id="Nombre" name="Nombre" size="30" placeholder="Escriba su nombre" required>
+                                                      <span id="errorFName" class="error"> </span></p>
+                                                  </p>
+                                                  <p>
+                                                      <label for="apell">Apellido:</label>
+                                                      <input type="text" id="Apellidos" name="Apelidosl" size="30" maxlength="100" placeholder="Escriba sus apellidos" required>
+                                                      <span id="errorApell" class="error"> </span></p>
+                                                  </p>
+                                                  <p>
+                                                      <label for="address">Email:</label>
+                                                      <input type="text" id="Email" name="Email" size="30" maxlength="200" placeholder="Escriba su email">
+                                                      <span id="errorCorreo" class="error"> </span></p>
+                                                  </p>
+                                                  <p>
+                                                      <label for="city">Ciudad:</label>
+                                                      <input type="text" id="Ciudad" name="Ciudad" placeholder="Escriba su ciudad">
+                                                  </p>
+                                                  <p>
+                                                      <label class="top" for="coment">Comentarios:</label>
+                                                      <textarea id="coment" name="coment" placeholder="Escriba los comentarios que consideres oprtunos"></textarea>
+                                                  </p>
+                                              </fieldset>
+                          
+                                      <fieldset>
+                                          <legend>Opinion personal</legend>
+                                          <p>
+                                              <label class="long">¿Quieres recibir noticias de otras series?</label>
+                                              <label><input type="radio" value="si" name="pregunta" id="pregunta_si" /> SI</label>
+                                              <input type="radio" value="no" name="pregunta" id="pregunta_no" /> NO
+                                          </p>
+                                          <p>
+                                                  <label class="long" for="opciones">Quiero recibir noticias de:</label>
+                                                  <select id="opciones" name="opciones">
+                                                      <option value="1">Juego de tronos</option>
+                                                      <option value="2">House of Cards</option>
+                                                      <option value="3">The Crown</option>
+                                                      <option value="4">La Peste</option>
+                                                  </select>
+                                              </p>
+                                          <p>
+                                              <input type="checkbox" id="condiciones" value="condiciones" name="condiciones" required>
+                                              <label class="long" for="condiciones">He leído y acepto las condiciones de uso</label>
+                                          </p>
+                                          <p>
+                                      </fieldset>
+                                      <fieldset>
+                                          <p><label></label>
+                                              <input id="submit" type="submit" value="Aceptar"> 
+                                              <input id="reset" type="reset" value="Borrar">
+                                          </p>
+                                      </fieldset>
+                                  </form>
+                                  <div id="resultado" class="oculto">
+                                      <h2>Tus datos son:</h2>			
+                                      <ul id="parrafo_1"></ul>
+                                      <input id="submit" type="submit" value="Volver al inicio"> &nbsp;
+                                  </div>	
+                              </article>
+                          
+                           </body>
+                          
+               </main>
+            </body>
+            <div class="clear"></div>
+        </div>
+    </body>
+    <footer>
+        <div class="right">
+            <ul>
+            <li><a href="#">Terminos</a></li>
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Ayuda</a></li>
+            <li><a href="#">Acerca de</a></li>
+            </ul>
+        </div>
+        <div class="left">
+                <p><i class="fa fa-copyright"></i> 2018 Babel S.A.</p>
+                <a id="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a id="twitter"href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a id="instagram"href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        </div>
+    </footer>
+</html>
