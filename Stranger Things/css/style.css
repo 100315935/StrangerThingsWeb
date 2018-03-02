@@ -20,6 +20,15 @@ body{
      background-attachment: fixed;
 
 }
+
+    body h2{
+        font-family: 'Benguiat';
+    }
+
+    body ul{
+        font-family: 'Calibri'
+    }
+
 .opacity body:before {
     content: "";
     position: fixed;
@@ -38,8 +47,12 @@ header{
     background-size: 70% */
     border-bottom-width: 6rem;
 }
-    .wraper{
-        text-align: center;
+    header img{
+        display:block;
+        margin:auto;
+        max-width: 100%;
+        height: auto;
+        width: auto/9;
     }
 
     header p{
@@ -75,30 +88,7 @@ nav {
   text-decoration: none;
   display: inline-block;
 }
-/*   nav ul{
-        margin: 0px;
-        padding: 0px;
-        list-style: none;
-        text-align: center;
-    }
 
-
-    nav li{
-        display: inline-block;
-        white-space: nowrap;
-        width: 20%;
-        font-size: 0.5 em
-    }
-
-    nav a {
-        text-decoration: none;
-        color: beige;
-        font-weight: bold;
-        display: block;
-        /*El padding determina el alto del menu*/
-  /*       padding: 1rem;
-    }  */
-    /* The dropdown container */
 .dropdown {
     float: left;
     overflow: hidden;
@@ -216,41 +206,45 @@ aside {
             background-color:rgba(220, 245, 245, 0.925);
             border: black;
         }
+
+article h2{
+    text-align: center;
+}
+
 main{
-    width: 50%;
+    width: 60%;
+    margin: 1em 1% 0em 2%;
+    float: left;
+    clear: left;
+    background-color: darkgray;
+}
 
     
-}   main h3{
-     text-align: center;
-     font-family: 'Benguiat';
-     font-size: 3 rem;
-     font-weight: bold;
-     color: black
+    main h3{
+        text-align: center;
+        font-family: 'Benguiat';
+        font-size: 3 rem;
+        font-weight: bold;
+        color: black
     }
     main fieldset{
         font-family:Arial, Helvetica, sans-serif;
         font-size: 2 rem;
         color: black
     }
-main {
-        width: 60%;
-        margin: 1em 1% 0em 2%;
-        float: left;
-        clear: left;
-        background-color: darkgray;
-        }
         section.main article{
             overflow: auto;
         }
 footer{
-            margin-top: 1em;
-            padding: 1em 0em;
-            border-radius: 5px;
-          /*   background-image: url(../img/poster2.jpg);
-            background-size: 80% */
-            background:rgb(24, 5, 5);
-            color: rgba(196, 177, 177, 0.911)
-        }
+    font-family: 'Calibri';    
+    margin-top: 1em;
+    padding: 1em 0em;
+    border-radius: 5px;
+    /*   background-image: url(../img/poster2.jpg);
+    background-size: 80% */
+    background:rgb(24, 5, 5);
+    color: rgba(196, 177, 177, 0.911)
+    }
     
 
     footer ul{
@@ -330,3 +324,98 @@ footer{
     background-color: #555;
 }
     
+#noticias h3{
+    font-family: 'Benguiat';
+}
+#noticias li{
+    text-align: center;
+    list-style-type: none;
+    font-family: 'Benguiat';
+}
+p{
+    font-family: 'Calibri';
+}
+.oculto{
+    display: none;
+}
+
+article h3{
+    text-align: center;
+}
+
+@media screen and(max-width:768px) { /* tablets */
+
+    /*Sección y aside pasan a pantalla completa*/
+    section.main, aside {
+    width: auto;
+    margin: 20px 5%;
+    }
+
+    /*Los items del menu ocupan el 100%*/
+    
+    nav .navbar{
+        display: inline-block;
+        width: auto;
+    }
+    aside{
+        float: none;
+    }
+
+}
+
+@media screen and (max-width:480px) { /* mobile */
+
+    /*En la sección, y el aside la imagen 
+    ocupa el 100% */
+    section.main article img {
+        width: 100%;
+    }
+
+   /*  article, aside > section {
+        width: auto;
+        margin: 20px 5%;
+        }  */
+
+        
+    aside p, aside figure {
+        display:none;
+    }
+
+    /*El titulo se reduce*/
+
+    header {
+        width: 80%;
+        float: left;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    header p {
+        display: none;
+    }
+
+    header h1 {
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+   /*  El menu superior desaparece */
+    nav .navbar {
+        display: none;
+    }
+    div.fa {
+        display:block;
+        float: left;
+        margin-top: 1rem;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+
+    nav .navbar {
+        display: block;
+        clear: both;
+    }
+
+    nav li {
+        display: block;
+    }
+}
