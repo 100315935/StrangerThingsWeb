@@ -1,3 +1,29 @@
-<p>
-  reparto works!
-</p>
+<div class="card">
+    <div class="card-header">
+      <h4 class="card-title">Personajes de Stranger Things</h4>
+    </div>
+
+    <div class="card-footer text-muted" [hidden]= "show" >
+        <p class="card-text">
+          <h3>{{elegido.personaje}}</h3>
+          <h4>Interpretado por {{elegido.actor}} ({{elegido.edad}})</h4>
+          <img src={{elegido.foto}}> {{elegido.descripcion}}
+          <button type="button" class="btn btn-primary" (click)=ocultar()>Cerrar</button>
+      </div>
+
+    <div class="card-footer text-muted" >
+      <p class="card-text">Principales</p>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let name of reparto"><p><a (click)=elegir(name)>{{name.personaje}}</a>, interpretado por {{name.actor}} ({{name.edad}}), {{name.descripcion}}</p></li>
+      </ul>
+    </div>
+
+    <div class="card-body">
+      <div class="form-group">
+        <label for="clave">Buscar personaje</label>
+        <input type="text"
+          class="form-control" name="clave" id="clave"  placeholder="" [(ngModel)]="clave">
+      </div>
+      <button type="button" class="btn btn-primary" (click)=buscar(clave)>Buscar</button>
+    </div>
+  </div>

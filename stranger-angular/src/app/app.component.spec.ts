@@ -1,14 +1,31 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
+
 import { AppComponent } from './app.component';
+import { CabezaComponent } from './core/cabeza/cabeza.component';
+import { PieComponent } from './core/pie/pie.component';
+import { MenuComponent } from './core/menu/menu.component';
+import { AsideComponent } from './core/aside/aside.component';
+import { InicioModule } from './inicio/inicio.module';
+
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        BrowserModule,
+        AppRoutingModule,
+        InicioModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        CabezaComponent,
+        PieComponent,
+        MenuComponent,
+        AsideComponent
       ],
     }).compileComponents();
   }));
