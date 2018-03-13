@@ -1,6 +1,14 @@
 img.img_inicio{
   display: inline;
   float: left;
-  width: 40%;
+  width: 35%;
   margin: 2%;
+}
+
+article{
+  background-color: darkred;
+}
+
+iframe{
+  width: 100%;
 }
