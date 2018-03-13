@@ -2,7 +2,7 @@
 @import "../node_modules/font-awesome/css/font-awesome.min.css";
 
 body{
-  background-image: url("./assets/background2.jpg");
+  background-image: url("./assets/background.jpg");
   background-size: 100%;
   background-attachment: fixed;
 }
