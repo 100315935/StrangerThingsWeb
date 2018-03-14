@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { TemporadasComponent } from './temporadas.component';
+import { RepartoComponent } from '../reparto/reparto.component';
 
 const routes: Routes = [
-  { path: '', component: TemporadasComponent }
+  { path: '', component: TemporadasComponent },
 ];
 
 @NgModule({
