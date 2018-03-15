@@ -12,6 +12,7 @@ export class RepartoComponent implements OnInit {
   reparto: Array<RepartoIf>;
   clave: string;
   show: boolean;
+  show2: boolean;
   elegido: RepartoIf;
 
   constructor() {
@@ -20,6 +21,7 @@ export class RepartoComponent implements OnInit {
   ngOnInit() {
     this.reparto = aReparto;
     this.show = true;
+    this.show2 = false;
     this.elegido = {
         personaje: '',
         actor: '',
@@ -33,6 +35,7 @@ export class RepartoComponent implements OnInit {
       aReparto.forEach(element => { if (element.personaje === clave || element.actor === clave) {
         this.elegido = element;
         this.show = false;
+        this.show2 = true;
       }
       });
   }
@@ -40,8 +43,10 @@ export class RepartoComponent implements OnInit {
   elegir(elegido) {
     this.elegido = elegido;
     this.show = false;
+    this.show2 = true;
   }
   ocultar() {
     this.show = true;
+    this.show2 = false;
   }
 }

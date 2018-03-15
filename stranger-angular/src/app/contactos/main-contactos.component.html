@@ -1,0 +1,17 @@
+<div class="container mb-2">
+  <div class="row align-items-center main">
+      <div class="col text-center">
+          <div class="card">
+            <div class="card-header">
+              Apuntate a nuestra Newsletter
+            </div>
+            <div class="card-body">
+              <sta-altas (outAddContacto)="addContacto($event)"></sta-altas>
+            </div>
+            <div class="card-footer text-left text-muted" *ngIf="aContactos.length">
+              <sta-lista [aItems]="aContactos" (outBorrarItem)="deleteContacto($event)"></sta-lista>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>

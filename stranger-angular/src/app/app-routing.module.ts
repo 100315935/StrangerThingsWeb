@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { InicioComponent } from './inicio/inicio.component';
-import { TemporadasComponent } from './temporadas/temporadas.component';
+
 
 const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
@@ -10,7 +10,8 @@ const routes: Routes = [
   { path: 'about', loadChildren: './about/about.module#AboutModule' },
   { path: 'temporadas', loadChildren: './temporadas/temporadas.module#TemporadasModule' },
   { path: 'reparto', loadChildren: './reparto/reparto.module#RepartoModule' },
-  { path: 'newsletter', loadChildren: './newsletter/newsletter.module#NewsletterModule' },
+  { path: 'newsletter', loadChildren: './contactos/contactos.module#NewsletterModule' },
+  { path: 'contactos', loadChildren: './contactos/contactos.module#ContactosModule' },
 ];
 
 @NgModule({

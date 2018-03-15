@@ -1,11 +1,18 @@
 article{
-    background-color: darkred;
+  padding: 10px;
+  text-align: justify;
+  background-color: rgb(172, 172, 172);
+  color: black;
 }
 
-h2{
-    font-family: Benguiat;
+h1{
+  font-family: Benguiat;
+  text-align: center;
+  font-weight: bolder;
+  color: rgb(223, 17, 17)
 }
 
 h3{
     font-family: Benguiat;
+    font-weight: bold;
 }

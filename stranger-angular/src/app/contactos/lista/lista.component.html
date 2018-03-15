@@ -1,0 +1,24 @@
+<h3>¿Ya tienes un usuario?</h3>
+
+<button class="btn btn-md btn-outline-green"
+(click)="mostrar()">Ver lista de usuarios</button>
+
+
+<div class="lista"
+  [hidden]="show"><br>
+<ul class="list-group">
+  <li class="list-group-item"
+  *ngFor="let item of aItems; let i = index">
+      <span class="col">Nombre: {{item.nombre}} {{item.apellido}}</span><br>
+      <span class="col">Email: {{item.email}} Telefono: {{item.telefono}} </span><br>
+      <span class="col">Recibe información extra sobre: {{item.serie}}</span>
+      <button class="decha btn btn-sm btn-outline-danger"
+        (click)="mostrar2()">Es el mio</button>
+  </li>
+</ul>
+</div>
+
+<div class="intro" [hidden]="show2">
+  <label class="email">Introduce tu email</label>
+  <label class="telefono">Introduce tu telefono</label>
+</div>
