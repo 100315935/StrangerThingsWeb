@@ -1,1 +1,8 @@
-<sta-lista>
+<h4>Lista de Posts</h4>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let blog of aPost; let i = index">Titulo: {{blog.titulo}} Autor: {{blog.nombre}}
+        <i class="fa fa-trash puntero" title="Eliminar" (click)="delete(i)" ></i>
+    </li>
+</ul>
+
+<sta-posts (outEnviar)="enviar($event)"></sta-posts>
