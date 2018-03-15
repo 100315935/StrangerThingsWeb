@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 
 import { BlogRoutingModule } from './blog-routing.module';
 import { BlogComponent } from './blog.component';
+import { PostsComponent } from './posts/posts.component';
+import { PostService } from '../servicios/post.service';
 
 @NgModule({
   imports: [
@@ -11,7 +13,8 @@ import { BlogComponent } from './blog.component';
     BlogRoutingModule,
     FormsModule
   ],
-  declarations: [BlogComponent],
-  exports: [BlogComponent]
+  declarations: [BlogComponent, PostsComponent],
+  exports: [BlogComponent],
+  providers: [PostService]
 })
 export class BlogModule { }

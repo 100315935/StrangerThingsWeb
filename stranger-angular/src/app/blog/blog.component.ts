@@ -1,5 +1,6 @@
-import { Component, OnInit, Input, Output, EventEmitter, ElementRef } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, ElementRef, ViewChild } from '@angular/core';
 import { PostIf } from '../modelos/blog';
+import { PostService } from '../servicios/post.service';
 
 
 @Component({
@@ -9,46 +10,32 @@ import { PostIf } from '../modelos/blog';
 })
 export class BlogComponent implements OnInit {
 
-  private sNombre: string;
-  private sTitulo: string;
-  private sPost: string;
   private aPost: Array<PostIf>;
   private blog: PostIf;
 
-  constructor() { }
+  constructor(public postService: PostService) { }
 
   ngOnInit() {
-    this.blog = {
-      nombre: '',
-      titulo: '',
-      post: ''
-    };
-    this.sNombre = '';
-    this.sTitulo = '';
-    this.sPost = '';
     this.aPost = [];
+    this.postService.getPosts().then(
+       response =>  this.aPost = response
+     );
   }
 
-  enviar() {
-    if ( this.sNombre === '') {
-      this.sNombre = 'Anónimo';
-    }
-    this.blog = {
-      nombre: this.sNombre,
-      titulo: this.sTitulo,
-      post: this.sPost
-    };
-    this.aPost.push(this.blog);
-    this.reset();
+  enviar(blog) {
+    console.log(blog);
+    this.postService.setPosts(blog)
+    .then(
+      () => {this.postService.getPosts()
+        .then(response =>  this.aPost = response);
+      });
   }
 
   delete(i) {
-    this.aPost.splice(i, 1);
-  }
-
-  reset() {
-    this.sNombre = '';
-    this.sPost = '';
-    this.sTitulo = '';
+    this.postService.deletePost(i)
+    .then(
+      () => {this.postService.getPosts()
+        .then(response =>  this.aPost = response);
+      });
   }
 }
