@@ -1,1 +1,56 @@
-<sta-lista>
+<h4>Lista de Posts</h4>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let blog of aPost; let i = index">Titulo: {{blog.titulo}} Autor: {{blog.nombre}}
+        <i class="fa fa-trash puntero" title="Eliminar" (click)="delete(i)" ></i>
+    </li>
+</ul>
+
+<br>
+
+<h4>Nuevo Post</h4>
+<div class="form-group">
+    <label for=""></label>
+    <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Introduzca su nombre" [(ngModel)]="sNombre">
+  </div>
+  
+  <div class="form-group">
+      <label for="nombre" ></label>
+      <input type="text" name="titulo" id="titulo" class="form-control" placeholder="Indica el título (es obligatorio" [(ngModel)]="sTitulo" required minlength="2" #titleState="ngModel">
+    </div>
+
+    <div [hidden]="titleState.valid || titleState.untouched ">
+
+    <div class="error-message" 
+        [hidden]="!titleState.errors?.required">
+        El título es obligatorio
+    </div>
+    <div class="error-message" 
+        [hidden] = "!titleState.errors?.minlength">
+        El título debe tener un mínimo de 2 caracteres
+    </div>
+  
+  </div>
+  
+  <div class="form-group">
+    <label for="titulo"></label>
+    <textarea class="form-control" id="post" rows=5 [(ngModel)]="sPost" required minlength="20" #postState="ngModel"
+    placeholder="Añade tu post (es obligatorio)"></textarea>
+  </div>
+
+  <div [hidden]="postState.valid || postState.untouched ">
+
+  <div class="error-message" 
+        [hidden]="!postState.errors?.required">
+        El post es obligatorio
+    </div>
+    <div class="error-message" 
+        [hidden] = "!postState.errors?.minlength">
+        El post debe tener un mínimo de 20 caracteres
+    </div>
+
+  </div>
+
+  <br>
+  
+  <button type="button" class="btn btn-secondary" (click) = enviar()>Enviar</button>
+  <button type="button" class="btn btn-warning" (click) = reset()>Borrar</button>
