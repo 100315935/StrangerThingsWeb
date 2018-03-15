@@ -10,7 +10,6 @@ const routes: Routes = [
   { path: 'about', loadChildren: './about/about.module#AboutModule' },
   { path: 'temporadas', loadChildren: './temporadas/temporadas.module#TemporadasModule' },
   { path: 'reparto', loadChildren: './reparto/reparto.module#RepartoModule' },
-  { path: 'newsletter', loadChildren: './contactos/contactos.module#NewsletterModule' },
   { path: 'contactos', loadChildren: './contactos/contactos.module#ContactosModule' },
 ];
 

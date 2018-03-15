@@ -10,6 +10,7 @@ import { PieComponent } from './core/pie/pie.component';
 import { MenuComponent } from './core/menu/menu.component';
 import { AsideComponent } from './core/aside/aside.component';
 import { InicioModule } from './inicio/inicio.module';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -23,9 +24,10 @@ import { InicioModule } from './inicio/inicio.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    InicioModule
+    InicioModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
