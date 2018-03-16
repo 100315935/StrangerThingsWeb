@@ -1,8 +1,12 @@
-<h4>Lista de Posts</h4>
+<div class="article">
+<h1>Lista de Posts</h1>
 <ul class="list-group">
-    <li class="list-group-item" *ngFor="let blog of aPost; let i = index">Titulo: {{blog.titulo}} Autor: {{blog.nombre}}
+    <li class="list-group-item" *ngFor="let blog of aPost; let i = index">
+      <h4 style="font-weight:bold">Titulo: {{blog.titulo}}</h4>
+       <p style="font-weight:bold">Autor: {{blog.nombre}}</p>{{blog.post}}
         <i class="fa fa-trash puntero" title="Eliminar" (click)="delete(i)" ></i>
     </li>
 </ul>
-
+<br>
 <sta-posts (outEnviar)="enviar($event)"></sta-posts>
+</div>

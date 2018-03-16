@@ -5,7 +5,8 @@ import { ContactosService } from '../servicios/contactos.service';
 @Component({
   selector: 'sta-main-contactos',
   templateUrl: './main-contactos.component.html',
-  styles: ['.main { min-height: 30rem; }']
+  // tslint:disable-next-line:max-line-length
+  styles: ['.main { min-height: 30rem;} .container, .card{border-radius:0.3rem;text-align: center; background-color: rgb(70, 14, 1)} .card-body{background-color:rgb(172, 172, 172)} .card-header{font-family:Benguiat; font-weight: bolder;color: rgb(223, 17, 17)}']
 })
 export class MainContactosComponent implements OnInit {
 

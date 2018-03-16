@@ -1,1 +1,15 @@
+a{
+  background-color: rgba(92, 4, 4, 0.705);
+  font-family: Benguiat;
+  align-self: center;
+  color: rgb(230, 252, 110);
+  font-weight: bolder;
+}
+
+
+
+.router-link-active{
+  background-color: rgb(13, 2, 54);
+}
+
 

@@ -12,12 +12,13 @@
       <span class="col">Nombre: {{item.nombre}} {{item.apellido}}</span><br>
       <span class="col">Email: {{item.email}} Telefono: {{item.telefono}} </span><br>
       <span class="col">Recibe información extra sobre: {{item.serie}}</span>
-      <button class="decha btn btn-sm btn-outline-danger"
+      <button class="decha btn btn-sm btn-dark"
         (click)="mostrar2()">Es el mio</button>
   </li>
 </ul>
 </div>
 
 <div class="intro" [hidden]="show2">
+  <br>
   <p>¡Gracias por suscribirte!</p>
 </div>

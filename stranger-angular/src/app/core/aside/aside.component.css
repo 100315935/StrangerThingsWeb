@@ -6,7 +6,7 @@ h2{
     color: rgb(230, 252, 110)
 }
 
-h3{
+h4{
     font-family: Benguiat;
     padding: 10px;
     text-align: left;
@@ -14,6 +14,7 @@ h3{
 }
 
 #noticias{
+  border-radius:0.3rem;
   background-color: rgb(13, 2, 54);
   text-align: justify;
 }
@@ -25,4 +26,8 @@ h3{
 a{
   color: darkblue;
   font-weight: bold;
+}
+
+.card-body{
+  padding-top: 0%;
 }

@@ -2,3 +2,21 @@
     color: red;
     font-size: 10 px;
 }
+
+h1{
+  font-family: Benguiat;
+  text-align: center;
+  font-weight: bolder;
+  color: rgb(223, 17, 17)
+}
+
+.article{
+  padding: 10px;
+  background-color: rgb(70, 14, 1);
+  border-radius: 0.3rem
+}
+
+i{
+  color: red;
+  float: right;
+}
