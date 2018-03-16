@@ -16,6 +16,7 @@ export class AltasComponent implements OnInit {
   opcion: OpcionesIf;
   serie: SeriesIf;
   show: boolean;
+  show2: boolean;
 
   @ViewChild('form1') formUser: any;
   oContacto: Contacto;
@@ -25,6 +26,7 @@ export class AltasComponent implements OnInit {
   constructor() {
     this.outAddContacto = new EventEmitter();
     this.show = true;
+    this.show2 = true;
    }
 
   ngOnInit() {
@@ -42,6 +44,7 @@ export class AltasComponent implements OnInit {
     this.outAddContacto.emit(this.oContacto);
     this.resetContacto();
     this.formUser.reset();
+    this.show2 = false;
   }
 
   btnBorrar() {
