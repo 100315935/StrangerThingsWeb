@@ -9,6 +9,6 @@ describe('stranger-angular App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to sta!');
+    expect(page.getParagraphText()).toEqual('Bienvenidos al "Upside down"');
   });
 });

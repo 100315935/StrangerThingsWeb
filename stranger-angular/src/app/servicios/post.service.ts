@@ -30,7 +30,6 @@ export class PostService {
   }
 
   deletePost(i) {
-    i++;
     return this.http.delete(this.sURL + '/' + i).toPromise();
   }
 

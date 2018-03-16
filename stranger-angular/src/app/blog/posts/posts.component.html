@@ -1,4 +1,4 @@
-<form novalidate  #form1="ngForm" (ngSubmit)="enviar()">
+<form novalidate #form1="ngForm" (ngSubmit)="enviar()">
 
     <h4>Nuevo Post</h4>
     <div class="form-group">
@@ -9,9 +9,8 @@
     <div class="form-group">
         <label for="nombre" ></label>
         <input type="text" name="titulo" id="titulo" class="form-control" placeholder="Indica el título (es obligatorio)" [(ngModel)]="blog.titulo" required minlength="2" #titleState="ngModel">
-        </div>
-
-        <div [hidden]="titleState.valid || titleState.untouched ">
+    </div>
+    <div [hidden]="titleState.valid || titleState.untouched ">
 
         <div class="error-message"
             [hidden]="!titleState.errors?.required">
@@ -26,25 +25,23 @@
 
     <div class="form-group">
         <label for="titulo"></label>
-        <textarea class="form-control" id="post" rows=5 [(ngModel)]="blog.post" [ngModelOptions]="{standalone: true}" required minlength="20" #postState="ngModel"
+        <textarea class="form-control" id="post" rows=5 [(ngModel)]="blog.post" [ngModelOptions]="{standalone: true}" required minlength="10" #postState="ngModel"
         placeholder="Añade tu post (es obligatorio)"></textarea>
     </div>
 
     <div [hidden]="postState.valid || postState.untouched ">
 
-    <div class="error-message"
-            [hidden]="!postState.errors?.required">
+        <div class="error-message" [hidden]="!postState.errors?.required">
             El post es obligatorio
         </div>
-        <div class="error-message"
-            [hidden] = "!postState.errors?.minlength">
+        <div class="error-message" [hidden] = "!postState.errors?.minlength">
             El post debe tener un mínimo de 20 caracteres
         </div>
 
     </div>
 
      <div class="botones">
-    <button type="submit" class="btn btn-dark" >Enviar</button>
-    <button type="reset" class="btn btn-secondary" >Borrar</button>
+    <button type="submit" [disabled]="form1.invalid" class="btn btn-dark" >Enviar</button>
+    <button type="reset"  class="btn btn-secondary" >Borrar</button>
     </div>
 </form>

@@ -10,7 +10,7 @@ import { PostService } from '../servicios/post.service';
 })
 export class BlogComponent implements OnInit {
 
-  private aPost: Array<PostIf>;
+   aPost: Array<PostIf>;
   private blog: PostIf;
 
   constructor(public postService: PostService) { }

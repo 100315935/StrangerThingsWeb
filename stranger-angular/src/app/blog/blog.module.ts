@@ -14,7 +14,7 @@ import { PostService } from '../servicios/post.service';
     FormsModule
   ],
   declarations: [BlogComponent, PostsComponent],
-  exports: [BlogComponent],
+  exports: [BlogComponent, PostsComponent],
   providers: [PostService]
 })
 export class BlogModule { }
