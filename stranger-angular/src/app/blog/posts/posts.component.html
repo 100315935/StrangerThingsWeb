@@ -8,7 +8,7 @@
 
     <div class="form-group">
         <label for="nombre" ></label>
-        <input type="text" name="titulo" id="titulo" class="form-control" placeholder="Indica el título (es obligatorio)" [(ngModel)]="blog.titulo" required minlength="2" #titleState="ngModel">
+        <input type="text" name="titulo" id="titulo" class="form-control" placeholder="Introduzca el título (es obligatorio)" [(ngModel)]="blog.titulo" required minlength="2" #titleState="ngModel">
     </div>
     <div [hidden]="titleState.valid || titleState.untouched ">
 

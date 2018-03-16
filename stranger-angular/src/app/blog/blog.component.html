@@ -2,7 +2,7 @@
 <h1>Lista de Posts</h1>
 <ul class="list-group">
     <li class="list-group-item" *ngFor="let blog of aPost; let i = index">
-      <h4 style="font-weight:bold">Titulo: {{blog.titulo}}</h4>
+      <h4 style="font-weight:bold"> {{blog.titulo}}</h4>
        <p style="font-weight:bold">Autor: {{blog.nombre}}</p>{{blog.post}}
         <i class="fa fa-trash puntero" title="Eliminar" (click)="delete(blog.id)" ></i>
     </li>
