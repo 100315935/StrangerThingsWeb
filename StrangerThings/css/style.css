@@ -127,6 +127,7 @@ aside {
     font-family: "Benguiat";
     text-align: center;
     font-weight: bold;
+    margin: 1rem;
     font-size: 1rem;
     color: beige; }
   aside h3, aside p {
@@ -166,6 +167,7 @@ main {
   background-color: darkgray; }
   main h3 {
     text-align: center;
+    margin: 1rem;
     font-family: "Benguiat";
     font-size: 3 rem;
     font-weight: bold;
@@ -178,6 +180,9 @@ main {
     float: right;
     width: 30%;
     height: 40%; }
+  main p {
+    margin: 1rem;
+    font-size: 1rem; }
 
 section.main article {
   overflow: auto; }
@@ -226,7 +231,7 @@ footer {
   margin-bottom: 16px; }
 
 #reproductor {
-  width: 50%;
+  width: 70%;
   margin: 20px auto;
   padding: 5px;
   background: #999999;
@@ -236,12 +241,12 @@ footer {
 #botones {
   float: left;
   width: 10%;
-  height: 20px; }
+  height: 25px; }
 
 #barra {
   position: relative;
   float: left;
-  width: 90%;
+  width: 80%;
   height: 16px;
   padding: 2px;
   border: 1px solid #CCCCCC;
@@ -334,8 +339,8 @@ article h3 {
 
 .img_inicio {
   align-self: left;
-  width: 25%;
-  margin: 2%; }
+  width: 95%;
+  margin-left: 2%; }
 
 @media screen and (max-width: 768px) {
   /* tablets */
