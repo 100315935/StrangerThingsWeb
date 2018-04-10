@@ -7,27 +7,27 @@
     box-sizing : border-box;
 }
 
+$letra_fondo_oscuro: beige;
+$font_ST:'Benguiat';
+
 @font-face {
-    font-family: 'Benguiat';
+    font-family: $font_ST;
     font-style: normal;
     font-weight: normal;
-    src: local('Benguiat'), url('benguiat_[allfont.net].woff') format('woff');
+    src: local($font_ST), url('benguiat_[allfont.net].woff') format('woff');
 }
 
 body{
      background-image: url(../img/background.jpg);
      background-size: 100%;
      background-attachment: fixed;
-
     h2{
-        font-family: 'Benguiat';
+        font-family: $font_ST;
     }
-
     ul{
         font-family: 'Calibri'
     }
 }
-
 .opacity body:before {
     content: "";
     position: fixed;
@@ -42,8 +42,9 @@ body{
 
 header{
     color:rgb(196, 131, 131);
+/*     background-image: url(../img/poster3.jpg);
+    background-size: 70% */
     border-bottom-width: 6rem;
-
     img{
         display:block;
         margin:auto;
@@ -51,17 +52,16 @@ header{
         height: auto;
         width: auto/9;
     }
-
     p{
         font-size: 1rem;
-        font-family: 'Benguiat';
+        font-family: $font_ST;
         text-align: center;
     }
+}
     .clear {
         width: 100%;
         clear: both;
     }
-}
 
 nav {
     border-radius: 1rem;
@@ -73,58 +73,54 @@ nav {
 .navbar {
   overflow: hidden;
   font-family: Arial;
-
-  a{
-    float: left;
-    width: 20%;
-    font-size: 16px;
-    color:beige;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    display: inline-block;
-  }
+    a {
+        float: left;
+        width: 20%;
+        font-size: 16px;
+        color:$letra_fondo_oscuro;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        display: inline-block;
+    }
+    a:hover, .dropdown:hover .dropbtn {
+        background-color: darken(brown,30); 
+    }
 }
 
 .dropdown {
     float: left;
     overflow: hidden;
-
-    .dropbtn {
-        font-size: 16px; 
-        border: none;
-        outline: none;
-        color: beige;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: inherit; /* Important for vertical align on mobile phones */
-        margin: 0; /* Important for vertical align on mobile phones */
-      }
+   .dropbtn {
+    font-size: 16px; 
+    border: none;
+    outline: none;
+    color: $letra_fondo_oscuro;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
   }
-
-  /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #2e1111; 
-  }
+} 
+  
   
   /* Dropdown content (hidden by default) */
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #2e1111;
+    background-color: darken(brown,30); 
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-
-    a {
-        float: none;
-        color: beige;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-      }
+     a {
+    float: none;
+    color: $letra_fondo_oscuro;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
   }
+}
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
@@ -132,71 +128,75 @@ nav {
   }
 
 aside {
-    width: 34%;
-    margin: 1em 2% 0em 1%;
-    float: right;
-    clear: right;
-    color: black;
-
+        width: 34%;
+        margin: 1em 2% 0em 1%;
+        float: right;
+        clear: right;
+        color: black;
     section {
-        border-radius: 1rem;
-        background-color: rgba(9, 18, 70, 0.911);
-        border: black;
-        padding: 1rem;
-
-        img {
-            width: 100%;
-            height: 10%;
-            position: relative;
+            border-radius: 1rem;
+            background-color: rgba(9, 18, 70, 0.911);
+            border: black;
+            padding: 1rem;
+            img {
+                width: 100%;
+                height: 10%;
+                position: relative;
+            }
         }
-    }
-        
     h2{
-        font-family: 'Benguiat'; 
+        font-family: $font_ST; 
         text-align: center;
         font-weight: bold;
         font-size: 1rem;
-        color: beige;
-    }
-    
+        color: $letra_fondo_oscuro;
+        
+        }
     h3, p{
-        padding: 0.1em 1em;
-    }
-
+            padding: 0.1em 1em;
+        }
     p a{
-        text-decoration: none;
-        display: inline-block;
-        padding: 8px 16px;
-    }
-
+                text-decoration: none;
+                display: inline-block;
+                padding: 8px 16px;
+        }
     ul{
-        list-style-type: none;
-        padding-bottom: 0.5em;
-    }
-
+            list-style-type: none;
+            padding-bottom: 0.5em;
+        }
+        
     figure {
-        width: 90%;
-        margin: 0em auto;
-    }
-
+            width: 90%;
+            margin: 0em auto;
+        }
+        
     img {
-        width: 100%;
+            width: 100%;
+        }
+    article{
+            border-radius: 1rem;
+            background-color:rgba(220, 245, 245, 0.925);
+            border: black;
+        }
     }
 
-    article{
-        border-radius: 1rem;
-        background-color:rgba(220, 245, 245, 0.925);
-        border: black;
+
+.notbot{
+    background-color: #030000;
+    color: rgb(252, 248, 248);
+    border-radius: 50%;
     }
+.notbot:hover {
+    background-color: lighten(#030000,40);
+        }
+    
+        
+
+article h2{
+    text-align: center;
 }
-        .notbot{
-            background-color: #030000;
-            color: rgb(252, 248, 248);
-            border-radius: 50%;
-        }
-        .notbot:hover {
-            background-color: #555;
-        }
+
+
 
 main{
     width: 60%;
@@ -204,31 +204,28 @@ main{
     float: left;
     clear: left;
     background-color: darkgray;
-
-    figure{
-        float: right;
-        width: 30%;
-        height: 40%;
-    }
-
-    h3{
+     h3{
         text-align: center;
-        font-family: 'Benguiat';
+        font-family: $font_ST;
         font-size: 3 rem;
         font-weight: bold;
         color: black
     }
-
     fieldset{
         font-family:Arial, Helvetica, sans-serif;
         font-size: 2 rem;
         color: black
     }
-}
-
-    section.main article{
-        overflow: auto;
+    figure{
+        float: right;
+        width: 30%;
+        height: 40%;
     }
+}
+section.main article{
+            overflow: auto;
+        }
+
 footer{
     font-family: 'Calibri';    
     margin-top: 1em;
@@ -237,9 +234,8 @@ footer{
     /*   background-image: url(../img/poster2.jpg);
     background-size: 80% */
     background:rgb(24, 5, 5);
-    color: rgba(196, 177, 177, 0.911)
-
-    ul{
+    color: rgba(196, 177, 177, 0.911);
+     ul{
         width:80%;
         margin: 0px;
         padding: 0px;
@@ -247,19 +243,15 @@ footer{
         text-align: center;
         overflow: auto;
     }
-
     li{
         display: inline-block;
         white-space: nowrap;
         width: 30%;
     }
-
     a{
-        color: rgba(196, 177, 177, 0.911)
+      color: rgba(196, 177, 177, 0.911)
     }
 }
-    
-
     .right{
         float: right;
         width:60%
@@ -273,6 +265,39 @@ footer{
     padding: 0 8px;
 }
 
+.map {
+    width: 45%;
+    height: 300px;
+    float: left;
+    margin-left: 1em;
+    margin-bottom: 16px;
+}
+
+#reproductor{
+    width: 50%;
+	margin: 20px auto;
+	padding: 5px;
+	background: #999999;
+	border: 1px solid #666666;
+	border-radius: 10px;}
+#botones{
+	float: left;
+	width: 10%;
+	height: 20px;}
+#barra{
+	position: relative;
+	float: left;
+	width: 90%;
+	height: 16px;
+	padding: 2px;
+	border: 1px solid #CCCCCC;
+	background: #EEEEEE;}
+#progreso{
+	position: absolute;
+	width: 0%;
+		height: 16px;
+        background: red;}
+        
 /* Display the columns below each other instead of side by side on small screens */
 @media (max-width: 650px) {
     .column {
@@ -316,7 +341,7 @@ footer{
 }
 
 .button:hover {
-    background-color: #555;
+    background-color: lighten(#030000,40);;
 }
 
 .oculto{
@@ -326,7 +351,7 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    color: beige;
+    color: $letra_fondo_oscuro;
     border: 2px solid black;
 }
 
@@ -349,13 +374,15 @@ tr:nth-child(odd) {
 
 
     
-#noticias h3{
-    font-family: 'Benguiat';
-}
-#noticias li{
+#noticias{ 
+    h3{
+    font-family: $font_ST;
+    }
+    li{
     text-align: center;
     list-style-type: none;
-    font-family: 'Benguiat';
+    font-family: $font_ST;
+    }
 }
 p{
     font-family: 'Calibri';
