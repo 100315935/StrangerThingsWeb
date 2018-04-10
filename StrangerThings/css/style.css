@@ -17,7 +17,9 @@ body {
   background-size: 100%;
   background-attachment: fixed; }
   body h2 {
-    font-family: "Benguiat"; }
+    font-family: "Benguiat";
+    font-size: 2rem;
+    font-weight: bolder; }
   body ul {
     font-family: 'Calibri'; }
 
@@ -231,32 +233,39 @@ footer {
   margin-bottom: 16px; }
 
 #reproductor {
-  width: 70%;
+  width: 720px;
   margin: 20px auto;
   padding: 5px;
-  background: #999999;
-  border: 1px solid #666666;
+  background: brown;
+  border: 2px solid #666666;
   border-radius: 10px; }
+  #reproductor nav {
+    margin: 5px 0px;
+    height: 25px;
+    border-radius: 0.2px; }
 
 #botones {
   float: left;
-  width: 10%;
-  height: 25px; }
+  width: 99px;
+  height: 14px; }
+  #botones #reproducir {
+    background-color: #EEEEEE;
+    color: blue;
+    border-radius: 2px;
+    font-weight: bold; }
 
 #barra {
-  position: relative;
   float: left;
-  width: 80%;
-  height: 16px;
-  padding: 2px;
+  width: 605px;
+  height: 25px;
   border: 1px solid #CCCCCC;
   background: #EEEEEE; }
 
 #progreso {
   position: absolute;
-  width: 0%;
-  height: 16px;
-  background: red; }
+  width: 0px;
+  height: 25px;
+  background: rgba(75, 75, 236, 0.808); }
 
 /* Display the columns below each other instead of side by side on small screens */
 @media (max-width: 650px) {
@@ -320,6 +329,10 @@ tr:nth-child(odd) {
 .temporada {
   text-align: left; }
 
+#noticias h2 {
+  font-weight: bolder;
+  font-size: 3rem; }
+
 #noticias h3 {
   font-family: "Benguiat"; }
 
@@ -327,6 +340,9 @@ tr:nth-child(odd) {
   text-align: center;
   list-style-type: none;
   font-family: "Benguiat"; }
+
+#noticias img {
+  height: 3rem; }
 
 p {
   font-family: 'Calibri'; }
