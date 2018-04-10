@@ -1,0 +1,12 @@
+{
+  "name": "",
+  "version": "",
+  "scripts": {
+    "sass" : "node-sass -w -o ./css ./sass",
+    "compilacion" : "parallelshell \"npm run sass\""
+  },
+  "dependencies": {
+    "node-sass": "^4.8.3"
+  }
+
+}
