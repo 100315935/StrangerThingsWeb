@@ -185,11 +185,10 @@ aside {
     background-color: #030000;
     color: rgb(252, 248, 248);
     border-radius: 50%;
-    }
-.notbot:hover {
-    background-color: lighten(#030000,40);
+    :hover {
+    background-color: lighten(#030000,10);
         }
-    
+    }
         
 
 article h2{
@@ -266,10 +265,12 @@ footer{
 }
 
 .map {
-    width: 45%;
+    width: auto;
     height: 300px;
-    float: left;
-    margin-left: 1em;
+    display: block;
+    justify-content: center;
+    align-self: center;
+    margin: 1em;
     margin-bottom: 16px;
 }
 
@@ -395,9 +396,8 @@ article h3{
     text-align: center;
 }
 
-img.img_inicio{
-    display: inline;
-    float: left;
+.img_inicio{
+    align-self: left;
     width: 25%; 
     margin: 2%; 
 }

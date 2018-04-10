@@ -1,24 +1,5 @@
-function mapaFijo() {
 
-  // mapa sin geolocalización:
-  // ejemplo básico del uso del API de google.maps
-
-  var domMapa = document.getElementById("otroMapa");
-  var latitude = 40;
-  var longitude = -6;
-  var options = {
-      position: new google.maps.LatLng(latitude, longitude),
-      title: "Tu localización",
-      zoom: 5,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  var map = new google.maps.Map(domMapa, options);
-  map.setCenter(new google.maps.LatLng(latitude, longitude));
-
-}
-
-
-function mapaLoc() {
+/* function mapaLoc() {
 
   // mapa con geolocalización
   // ejemplo básico del uso del nuevo API de HTML5
@@ -48,8 +29,33 @@ function mapaLoc() {
       },
       {enableHighAccuracy : true}); // fin de getCurrentPosition
   }
-}
+} */
+
+function mapaFijo() {
+
+    // mapa sin geolocalización:
+    // ejemplo básico del uso del API de google.maps
+  
+    var domMapa = document.getElementById("otroMapa");
+    var latitude = 32.593719;
+    var longitude = -95.203205;
+    var options = {
+        position: new google.maps.LatLng(latitude, longitude),
+        title: "Tu localización",
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(domMapa, options);
+    var marker = new google.maps.Marker(options);
+          var circle = new google.maps.Circle({
+              map: map, radius: options.position.accuracy
+          }); // fin de circle
+          circle.bindTo('center', marker, 'position');
+          marker.setMap(map);
+    map.setCenter(new google.maps.LatLng(latitude, longitude));
+  
+  }
 
 (function() {
-  window.addEventListener("load", () => { mapaFijo(); mapaLoc();})
+  window.addEventListener("load", () => { mapaFijo(); /* mapaLoc(); */})
 })()
