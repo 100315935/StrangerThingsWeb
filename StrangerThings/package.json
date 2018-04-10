@@ -1,0 +1,16 @@
+{
+  "name": "strangerthings",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w -o ./css ./sass",
+    "compilacion": "parallelshell \"npm run sass\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "node-sass": "^4.8.3"
+  }
+}
