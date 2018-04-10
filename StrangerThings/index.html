@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <script src="./app/app.js" type="module"></script>
+        <script src="./app/video.js" type="module"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     </head>
     <body>
@@ -57,7 +58,7 @@
                                     <a href="./temporadas.html">Temporada 3</a>
                               </div>
                             </div>
-                        </div>
+                       
                             <a id ='galeria' href="./galeria.html">Galería</a>
                             <a id ='acerca_de' href="./about2.html">Acerca de</a>
                         </div>
@@ -75,10 +76,23 @@
 
 Este emocionante drama de Netflix protagoniza a la premiada actriz Winona Ryder como Joyce Byers, que vive en una pequeña ciudad de Indiana en 1983, inspirada en una época en que los cuentos de ciencia ficción cautivaban al público. Cuando el hijo de 12 años de edad de Joyce Byers, Will, desaparece, lanza una aterradora investigación sobre su desaparición con las autoridades locales. Mientras buscan respuestas, desentrañan una serie de misterios extraordinarios que involucran experimentos gubernamentales secretos, fuerzas nerviosas sobrenaturales y una niña muy inusual.
                             </p>
-                            <div class = "video">
-                                    <iframe src="https://www.youtube.com/embed/-RcPZdihrp4">
-                                    </iframe>
-                            </div>
+                                    <!-- <iframe src="https://www.youtube.com/embed/-RcPZdihrp4">
+                                    </iframe> -->
+                                    <section id="reproductor">
+                                        <video id="medio" width="720" height="400">
+                                            <!-- <source src="../assets/Shadowrun.webm" type="video/webm"> </source>
+                                            <source src="../assets/Shadowrun.mp4" type="video/mp4"> </source> -->
+                                        </video>
+                                        <div id="anv">
+                                            <div id="botones">
+                                                <input type="button" id="reproducir" value="Reproducir">
+                                            </div>
+                                            <div id="barra">
+                                                <div id="progreso"></div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <div id="mensajes"> </div>
                     </article>
                </main>
             <div class="clear"></div>
