@@ -15,12 +15,12 @@ function main () {
         if(!oMedio.paused && !oMedio.ended) {
             //paramos el vídeo
              oMedio.pause();
-             oReproducir.value = 'Reproducir';
+             oReproducir.value = ' Reproducir ';
              window.clearInterval(bucle);
          }else{
              //reproducimos el video
              oMedio.play();
-             oReproducir.value = '    Pausa   ';
+             oReproducir.value = '      Pausa     ';
              var bucle = window.setInterval(estado, 1000);
              // cada segundo ejecuto la función estado, que pintará la barra de estado
              // bucle corresponde al identificator del setInterval
