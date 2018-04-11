@@ -196,19 +196,18 @@ footer {
   margin-top: 1em;
   padding: 1em 0em;
   border-radius: 5px;
-  /*   background-image: url(../img/poster2.jpg);
-    background-size: 80% */
   background: #180505;
   color: rgba(196, 177, 177, 0.911); }
   footer ul {
+    height: 2em;
     width: 80%;
     margin: 0px;
     padding: 0px;
     list-style: none;
-    text-align: center;
+    text-align: right;
     overflow: auto; }
   footer li {
-    display: inline-block;
+    display: inline;
     white-space: nowrap;
     width: 30%; }
   footer a {
@@ -413,7 +412,7 @@ article h3 {
     margin-left: 1rem; }
   /*  El menu superior desaparece */
   nav {
-    display: none; }
+    display: block; }
   div.fa {
     display: block;
     float: left;
@@ -434,13 +433,14 @@ article h3 {
   float: left;
   margin: 5px;
   border: 1px solid black;
-  padding: 5px; }
+  padding: 5px;
+  font-family: 'Benguiat'; }
 
 /*Reubicamos el contenedor de las imágenes*/
 .galeria .boton + figure {
   position: absolute;
   left: 20%;
-  top: 52%;
+  top: 55%;
   margin-left: 300px;
   transition: 1s; }
 
