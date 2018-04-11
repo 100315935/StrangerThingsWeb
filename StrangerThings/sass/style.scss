@@ -150,7 +150,7 @@ aside {
         font-family: $font_ST; 
         text-align: center;
         font-weight: bold;
-        margin:1rem;
+        margin-bottom:1rem;
         font-size: 1rem;
         color: $letra_fondo_oscuro;
         
@@ -177,10 +177,12 @@ aside {
             width: 100%;
         }
     article{
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             border-radius: 1rem;
             background-color:rgba(220, 245, 245, 0.925);
             border: black;
+            padding-bottom: 10px;
+            padding-top: 10px;
         }
     }
 .notbot{
@@ -196,6 +198,8 @@ aside {
 
 article h2{
     text-align: center;
+    padding: 10px;
+    font-weight: bolder;
 }
 
 
@@ -433,6 +437,11 @@ article h3{
     margin-left: 2%; 
 }
 
+.conte_galeria{
+    background-color: brown;
+    border-radius: 0.5rem;
+}
+
 @media screen and(max-width:768px) { /* tablets */
 
     /*Sección y aside pasan a pantalla completa*/
@@ -528,8 +537,9 @@ article h3{
 	padding: 0;
 }
 
-.galeria .boton{
-    float: left;
+.galeria .boton{ 
+    display:inline-block;
+    text-align: center;
     margin: 5px;
     border:1px solid black;
     padding: 5px;
@@ -539,7 +549,7 @@ article h3{
 .galeria .boton + figure{
     position: absolute;
     left: 20%;
-    top: 55%;
+    top: 45%;
     margin-left: 300px;
     transition: 1s;
 }	
