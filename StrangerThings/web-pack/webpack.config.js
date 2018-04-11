@@ -4,12 +4,10 @@ module.exports = {
     resolve: {
         extensions: ['', '.js', '.jsx']
     },
-    entry: {
-        app: ['../app/app.js']
-    },
+    entry: '/app/app.js',
     output: {
-        path: '../app/',
+        path: path.resolve(__dirname,'/web-pack'),
         filename: 'bundle.js'
     },
-    mode: 'development',
+    mode: 'development'
 }

@@ -111,7 +111,7 @@ nav {
     display: none;
     position: absolute;
     background-color: darken(brown,30); 
-    min-width: 160px;
+    min-width: 135px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
      a {
@@ -121,7 +121,7 @@ nav {
     text-decoration: none;
     display: block;
     text-align: left;
-  }
+    }
 }
   
   /* Show the dropdown menu on hover */
